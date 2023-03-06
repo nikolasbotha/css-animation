@@ -1,0 +1,53 @@
+
+  /* The element to apply the animation to */
+  div:hover{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(240, 162, 16);
+    animation-name: animatedSquare;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;    
+  } 
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  div {
+  position: relative;
+    }
+
+    div img {
+  position: absolute;
+    }
+
+  .top:hover {
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-direction: alternate;
+  }
+
+  @keyframes animatedSquare {
+    0%   {border-radius: 0%;}
+    25%  {border-radius: 100%;
+          transform: rotate(90deg);}
+    50%  {background-color: rgba(69, 4, 221, 0.452);
+          transform: rotate(180deg);}
+    100% {background-color: rgb(235, 171, 52);
+          transform: rotate(360deg);}
+    }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
